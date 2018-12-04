@@ -3,10 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nuestra Panaderia | Contactos</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicom.icon">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicom.icon">
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
 	<link href = "https://file.myfontastic.com/iZaSKms4BpuG4DNQ7Hw3FT/icons.css" rel = "stylesheet">
+	<script src="js/validar.js"></script>
+
 </head>
 <body>
 	<header class="main-header">
@@ -56,19 +60,22 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</section>
-			<form action="#" class="formulario">
-				<h1 class="formulario_titulo">Contactenos</h1>
-				<input type="text" class="formulario_input">
-				<label for="#" class="formulario_label">Nombres</label>
-				<input type="text" class="formulario_input">
-				<label for="#" class="formulario_label">Apellido</label>
-				<input type="text" class="formulario_input">
-				<label for="#" class="formulario_label">Telefono</label>
-				<input type="text" class="formulario_input">
-				<label for="#" class="formulario_label">Mail</label>
-				<input type="submit" class="formulario_submit">
+			<h1> Formulario de Registro</h1>
+			<form action="registrar.php" method="post" class="form-registrar">
+				<h2 class="form-titulo">Crea una Cuenta</h2>
+				<div class="contenedor-inputs">
+					<input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
+					<input type="text" name="apellido" placeholder="Apellido" class="input-48" required>
+					<input type="email" name="correo" placeholder="Correo" class="input-100" required>
+					<input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
+					<input type="password" name="clave" placeholder="Contraseña" class="input-48" required>
+					<input type="text" name="telefono" placeholder="Telefono" class="input-100" required>
+					<input type="submit" value="Registrar" class="btn-enviar">
+					<p class="form-link">Ya tiene su cuenta?</p> <a href="#">Ingrese aqui </a>
+				</div>
 				
 			</form>
+			
 			</main>	
 			<footer class="main-footer">
 				<div class="container container-flex">
@@ -97,8 +104,8 @@
 				</div>
 				<p class="copy">© Nuestra Panarderia | Todos los Derechos Reservados</p>
 			</footer>
-		<script src="js/menu.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="js/contacto.js"></script>
+		
+
+		
 </body>
 </html>
