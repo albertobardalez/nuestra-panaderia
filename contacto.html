@@ -8,9 +8,9 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
-	<link href = "https://file.myfontastic.com/iZaSKms4BpuG4DNQ7Hw3FT/icons.css" rel = "stylesheet">
 	<script src="js/validar.js"></script>
-
+	<link href = "https://file.myfontastic.com/iZaSKms4BpuG4DNQ7Hw3FT/icons.css" rel = "stylesheet">
+	
 </head>
 <body>
 	<header class="main-header">
@@ -61,16 +61,16 @@
 			</div>
 		</section>
 			<h1> Formulario de Registro</h1>
-			<form action="registrar.php" method="post" class="form-registrar">
+			<form action="registrar.php" method="post" class="form-register" onsubmit="return validar();">
 				<h2 class="form-titulo">Crea una Cuenta</h2>
 				<div class="contenedor-inputs">
-					<input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
-					<input type="text" name="apellido" placeholder="Apellido" class="input-48" required>
-					<input type="email" name="correo" placeholder="Correo" class="input-100" required>
-					<input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
-					<input type="password" name="clave" placeholder="Contraseña" class="input-48" required>
-					<input type="text" name="telefono" placeholder="Telefono" class="input-100" required>
-					<input type="submit" value="Registrar" class="btn-enviar">
+					<input type="text" name="nombre" placeholder="Nombre" class="input-48">
+					<input type="text" name="apellido" placeholder="Apellido" class="input-48">
+					<input type="email" name="correo" placeholder="Correo" class="input-100">
+					<input type="text" name="usuario" placeholder="Usuario" class="input-48">
+					<input type="password" name="clave" placeholder="Contraseña" class="input">
+					<input type="text" name="telefono" placeholder="Telefono" class="input-100">
+					<input type="submit" value="Registrar" class="btn-enviar">	
 					<p class="form-link">Ya tiene su cuenta?</p> <a href="#">Ingrese aqui </a>
 				</div>
 				
