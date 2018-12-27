@@ -61,20 +61,20 @@
 			</div>
 		</section>
 			<h1> Formulario de Registro</h1>
-			<form action="registrar.php" method="post" class="form-register" onsubmit="return validar();">
+			<form action="php/registrar.php" method="post" class="form-register" onsubmit="return validar();">
 				<h2 class="form-titulo">Crea una Cuenta</h2>
 				<div class="contenedor-inputs">
-					<input type="text" name="nombre" placeholder="Nombre" class="input-48" id="nombre">
-					<input type="text" name="apellido" placeholder="Apellido" class="input-48" id="apellido">
-					<input type="email" name="correo" placeholder="Correo" class="input-100" id="correo">
-					<input type="text" name="usuario" placeholder="Usuario" class="input-48" id="usuario">
-					<input type="password" name="clave" placeholder="Contraseña" class="input" id="clave">
-					<input type="text" name="telefono" placeholder="Telefono" class="input-100" id="telefono">
+					<input type="text" name="nombre" placeholder="Nombre" class="input-48" id="nombre" required>
+					<input type="text" name="apellido" placeholder="Apellido" class="input-48" id="apellido" required>
+					<input type="email" name="correo" placeholder="Correo" class="input-100" id="correo" required>
+					<input type="text" name="usuario" placeholder="Usuario" class="input-48" id="usuario" required>
+					<input type="password" name="clave" placeholder="Contraseña" class="input" id="clave" required>
+					<input type="text" name="telefono" placeholder="Telefono" class="input-100" id="telefono" required>
 					<input type="submit" value="Registrar" class="btn-enviar">	
 					<p class="form-link">Ya tiene su cuenta?</p> <a href="#">Ingrese aqui </a>
 				</div>
 				
-			</form>
+			</form>	
 			
 			</main>	
 			<footer class="main-footer">
